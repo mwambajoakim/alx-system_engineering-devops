@@ -1,1 +1,1 @@
-These are simple shell commands
+Shell Permissions
