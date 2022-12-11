@@ -1,0 +1,2 @@
+#!/bin/bash
+chgroup School hello
