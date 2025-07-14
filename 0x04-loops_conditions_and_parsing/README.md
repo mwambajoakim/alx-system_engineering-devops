@@ -9,3 +9,7 @@
 ## 00 - This Bash script displays Best School 10 times.
 - Only used a `for` loop
 - Used `echo` for displaying
+
+## 01 - This Bash script displays Best School 10 times.
+- Used a `while` loop
+- Used `echo` for displaying
