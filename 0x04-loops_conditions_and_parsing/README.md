@@ -35,3 +35,8 @@
 - Displays `17` and then `bad luck from Italy` for the 17th loop iteration
 - Used the `while` loop
 - Used `cases` instead of of `if` and `else` statements
+
+## 06 - This Bash script displays the time for 12 hours and 59 minutes:
+- Displays hours from `0` to `12`
+- Displasy minutes from `1` to `59`
+- Used the `while` loop
