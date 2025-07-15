@@ -47,7 +47,18 @@
 - Where only the part of the name after the first dash is displayed
 - Used the `for` loop
 
-## 10 - This Bash script that displays numbers from 1 to 100.
+## 08 - This Bash script gives you information about the school file.
+- Used `if` and, `else`
+- The Bash script checks if the file exists and print:
+  - if the file exists: `school file exists`
+  - if the file does not exist: `school file does not exist`
+- If the file exists, print:
+  - if the file is empty: `school file is empty`
+  - if the file is not empty: `school file is not empty`
+  - if the file is a regular file: `school is a regular file`
+  - if the file is not a regular file: (nothing)
+
+## 09 - This Bash script that displays numbers from 1 to 100.
 - Displays `FizzBuzz` when the number is a multiple of 3 and 5
 - Displays `Fizz` when the number is multiple of 3
 - Displays `Buz`z when the number is a multiple of 5
