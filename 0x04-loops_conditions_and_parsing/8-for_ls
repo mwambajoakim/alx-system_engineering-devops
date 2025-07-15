@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays the files in the current directory in a list
+
+for file in *;
+do
+	if [[ -e "$file" ]];
+	then
+		if [[ "$file" == *-* ]];
+		then
+			echo "${file#*-}"
+		else
+			echo "$file"
+		fi
+	fi
+done
