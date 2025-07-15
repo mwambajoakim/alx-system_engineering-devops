@@ -28,3 +28,10 @@
 - Displays `Best School` for the other iterations
 - Used the `while` loop
 - Used `if`, `elif` and `else`
+
+## 05 - This Bash script displays numbers from 1 to 20 and:
+- Displays `4` and then `bad luck from China` for the 4th loop iteration
+- Displays `9` and then `bad luck from Japan` for the 9th loop iteration
+- Displays `17` and then `bad luck from Italy` for the 17th loop iteration
+- Used the `while` loop
+- Used `cases` instead of of `if` and `else` statements
