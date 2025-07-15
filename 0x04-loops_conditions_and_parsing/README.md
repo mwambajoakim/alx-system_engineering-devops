@@ -40,3 +40,9 @@
 - Displays hours from `0` to `12`
 - Displasy minutes from `1` to `59`
 - Used the `while` loop
+
+## 07 - This Bash script displays:
+- The content of the current directory
+- In a list format
+- Where only the part of the name after the first dash is displayed
+- Used the `for` loop
