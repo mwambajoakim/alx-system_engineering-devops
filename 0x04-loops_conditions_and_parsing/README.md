@@ -46,3 +46,9 @@
 - In a list format
 - Where only the part of the name after the first dash is displayed
 - Used the `for` loop
+
+## 10 - This Bash script that displays numbers from 1 to 100.
+- Displays `FizzBuzz` when the number is a multiple of 3 and 5
+- Displays `Fizz` when the number is multiple of 3
+- Displays `Buz`z when the number is a multiple of 5
+- Otherwise, displays the number in a list format
