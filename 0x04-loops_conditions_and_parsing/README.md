@@ -21,3 +21,10 @@
 ## 03 - This Bash script displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
 - Used the `while` loop
 - Used the `if` statement
+
+## 04 - This Bash script loops from 1 to 10 and:
+- Displays `bad luck` for the 4th loop iteration
+- Displays `good luck` for the 8th loop iteration
+- Displays `Best School` for the other iterations
+- Used the `while` loop
+- Used `if`, `elif` and `else`
