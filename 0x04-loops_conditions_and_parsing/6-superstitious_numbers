@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# This script prints numbers 1 to 20
+# but on the 4th, 9th, and 17th iteration, prints;
+# "bad luck from China", "bad luck from Japan", "bad luck from Italy"
+
+i=1
+while [ $i -lt 21 ];
+do
+	case $i in
+	'5')
+	     echo "bad luck from China"
+	     ;;
+	'10')
+	     echo "bad luck from Japan"
+	     ;;
+	'17')
+	     echo "bad luck from Italy"
+	     ;;
+	esac
+	echo $i
+	i=$((i+1))
+done
