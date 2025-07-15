@@ -17,3 +17,7 @@
 ## 02 - This Bash script that displays Best School 10 times.
 - Used an `until` loop
 - Used `echo` for displaying
+
+## 03 - This Bash script displays Best School 10 times, but for the 9th iteration, displays Best School and then Hi on a new line.
+- Used the `while` loop
+- Used the `if` statement
