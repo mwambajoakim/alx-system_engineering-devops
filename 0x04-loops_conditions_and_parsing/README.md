@@ -63,3 +63,9 @@
 - Displays `Fizz` when the number is multiple of 3
 - Displays `Buz`z when the number is a multiple of 5
 - Otherwise, displays the number in a list format
+
+## 10 - This Bash script displays the content of the file /etc/passwd.
+- The script only displays:
+  - username
+  - user id
+  - Home directory path for the user
