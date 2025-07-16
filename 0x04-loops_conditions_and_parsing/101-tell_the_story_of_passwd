@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script tells a story using /etc/passwd file
+
+FILE_PATH=/etc/passwd
+
+if [ ! -f "$FILE_PATH" ];
+then
+	echo "Error, this file does not exist".
+	exit 1
+fi
+
+while IFS=: read -r U_NAME PASS U_ID G_ID UID_INFO HOME_DIR SHELL_DIR;
+do
+	echo "The user $U_NAME is part of the $G_ID gang, lives in $HOME_DIR and rides $SHELL_DIR. $U_ID's place is protected by the passcode $PASS, more info about the user here: $UID_INFO"
+done < "$FILE_PATH"
