@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays contents for /usr/passwd
+
+FILE_PATH=/etc/passwd
+
+if [ ! -f "$FILE_PATH" ];
+then
+	echo "Error, file does not exist"
+	exit 1
+fi
+
+while IFS= read -r line ;
+do
+	echo "$line"
+done < "$FILE_PATH"
