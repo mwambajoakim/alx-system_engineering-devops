@@ -6,6 +6,7 @@ FILE="apache-access.log"
 if [ ! -f "$FILE" ];
 then
 	echo "Error! File does not exist!"
+	exit 1
 fi
 
-awk '{ip=$1; code=$9; if(ip!="" && code ~ /^[0-9]+$/){count[ip,code]++}} END{for(k in count){split(k,p,SUBSEP); print count[k],p[1],p[2]}}' $FILE | sort -rn
+awk '{ip=$1; code=$9; if(ip!="" && code ~ /^[0-9]+$/){count[ip,code]++}} END{for(k in count){split(k,p,SUBSEP); print count[k],p[1],p[2]}}' "$FILE" | sort -rn
