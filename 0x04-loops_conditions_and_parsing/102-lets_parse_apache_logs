@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script prints the IP address and HTTP codes from an apache log file
+
+FILE="apache-access.log"
+
+if [ ! -f "$FILE" ];
+then
+	echo "Error, file does not exist!"
+fi
+
+awk '{print $1, $9}' $FILE
