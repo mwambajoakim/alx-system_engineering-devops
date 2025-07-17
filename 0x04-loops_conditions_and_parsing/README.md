@@ -69,3 +69,8 @@
   - username
   - user id
   - Home directory path for the user
+
+## 11 - This Bash script displays the visitor IP along with the HTTP status code from the Apache log file.
+- Format: IP HTTP_CODE in a list format
+- Used `awk`
+- No use of  `while`, `for`, `until` and `cut`
