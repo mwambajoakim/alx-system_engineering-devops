@@ -8,4 +8,4 @@ then
 	echo "Error! File does not exist!"
 fi
 
-awk '{count[$1" "$9]++} END {for (key in count) {print count[key], key}}' $FILE | sort -rn
+awk '{ip=$1; code=$9; if(ip!="" && code ~ /^[0-9]+$/){count[ip,code]++}} END{for(k in count){split(k,p,SUBSEP); print count[k],p[1],p[2]}}' $FILE | sort -rn
