@@ -11,3 +11,7 @@
 - Shows all processes, for all users, including those which might not have a TTY
 - Displays in a user-oriented format
 - Shows process hierarchy
+
+## 02 - This Bash script displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
+- No use of `pgrep`
+- The third line of the script must had to be `# shellcheck disable=SC2009`
