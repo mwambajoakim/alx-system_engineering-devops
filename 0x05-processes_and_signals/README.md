@@ -6,3 +6,8 @@
 
 ## 00 - This Bash script displays its own PID
 - Used `pgrep`
+
+## 01 - This Bash script displays a list of currently running processes.
+- Shows all processes, for all users, including those which might not have a TTY
+- Displays in a user-oriented format
+- Shows process hierarchy
