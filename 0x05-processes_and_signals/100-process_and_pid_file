@@ -1,8 +1,19 @@
 #!/usr/bin/env bash
 # This script handles signals
 
-FILE=$(touch /var/run/myscript.pid)
+FILE="/var/run/myscript.pid"
+touch $FILE
 PID=$(pidof $FILE)
+
+function remove_file()
+{
+	rm -f $FILE
+	kill "$PID"
+}
+
+trap 'echo "I hate the kill command"' SIGTERM
+trap 'echo "Y U no love me?!"' SIGINT
+trap remove_file SIGQUIT SIGTERM
 
 while :
 do
