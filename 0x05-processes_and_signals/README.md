@@ -34,3 +34,6 @@
 - With a `sleep 2` in between each iteration
 - `I am invincible!!!` when receiving a `SIGTERM` signal
 
+## 08 - This Bash script kills the process `7-highlander`
+- Used `pkill` with option `-9`
+
