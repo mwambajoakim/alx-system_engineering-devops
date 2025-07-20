@@ -37,3 +37,11 @@
 ## 08 - This Bash script kills the process `7-highlander`
 - Used `pkill` with option `-9`
 
+## 09 - This Bash script:
+- Creates the file `/var/run/myscript.pid` containing its PID
+- Displays `To infinity and beyond` indefinitely
+- Displays `I hate the kill command` when receiving a `SIGTERM` signal
+- Displays `Y U no love me?!` when receiving a `SIGINT` signal
+- Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a `SIGQUIT` or `SIGTERM` signal
+- Used functions to handle the signals
+
