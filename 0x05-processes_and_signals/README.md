@@ -22,3 +22,8 @@
 ## 04 - This Bash script displays To infinity and beyond indefinitely.
 - Added a `sleep 2` after each iteration
 
+## -05 - This Bash script stops `4-to_infinity_and_beyond` process.
+- Used `pgrep` to find the PID of the process
+- Used `kill` to terminate the process
+
+
