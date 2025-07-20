@@ -1,4 +1,4 @@
-I#!/usr/bin/env bash
+#!/usr/bin/env bash
 # This script prints 'To infinity and beyond' with sleep 2 in between
 
 while true;
