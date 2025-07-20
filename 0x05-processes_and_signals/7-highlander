@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This script runs a process. Ignores SIGTERM signal when it is sent one
+
+trap 'echo "I am invicible"' SIGTERM
+while true;
+do
+	echo "To infinity and beyond"
+	sleep 2
+done
