@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script handles signals
+
+FILE=$(touch /var/run/myscript.pid)
+PID=$(pidof $FILE)
+
+while :
+do
+	echo "To infinity and beyond"
+done
