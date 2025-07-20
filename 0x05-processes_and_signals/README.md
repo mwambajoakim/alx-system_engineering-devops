@@ -19,3 +19,6 @@
 ## 03 - This Bash script displays the PID, along with the process name, of processes whose name contain the word bash.
 - Used `pgrep` with the `-l` option
 
+## 04 - This Bash script displays To infinity and beyond indefinitely.
+- Added a `sleep 2` after each iteration
+
