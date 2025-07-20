@@ -29,3 +29,8 @@
 ## 06 - This Bash script stops `4-to_infinity_and_beyond` process.
 - Used `pkill` to end the process
 
+## 07 - This Bash script displays:
+- `To infinity and beyond` indefinitely
+- With a `sleep 2` in between each iteration
+- `I am invincible!!!` when receiving a `SIGTERM` signal
+
