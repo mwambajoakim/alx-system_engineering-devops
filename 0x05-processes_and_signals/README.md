@@ -26,4 +26,6 @@
 - Used `pgrep` to find the PID of the process
 - Used `kill` to terminate the process
 
+## 06 - This Bash script stops `4-to_infinity_and_beyond` process.
+- Used `pkill` to end the process
 
