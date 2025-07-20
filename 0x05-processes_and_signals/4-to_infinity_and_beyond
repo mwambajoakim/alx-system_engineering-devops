@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+I#!/usr/bin/env bash
 # This script prints 'To infinity and beyond' with sleep 2 in between
 
 while true;
 do
-	echo "To inifnity and beyond"
+	echo "To infinity and beyond"
 	sleep 2
 done
