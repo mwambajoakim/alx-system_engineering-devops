@@ -5,15 +5,26 @@ FILE="/var/run/myscript.pid"
 touch $FILE
 PID=$(pidof $FILE)
 
-function remove_file()
+handle_TERM()
+{
+	echo "I hate the kill command"
+	remove_and_exit
+}
+
+handle_QUIT()
+{
+	remove_and_exit
+}
+
+remove_and_exit()
 {
 	rm -f $FILE
 	kill "$PID"
 }
 
-trap 'echo "I hate the kill command"' SIGTERM
+trap handle_TERM SIGTERM
 trap 'echo "Y U no love me?!"' SIGINT
-trap remove_file SIGQUIT SIGTERM
+trap remove_and_exit SIGQUIT
 
 while :
 do
