@@ -27,3 +27,6 @@
 
 ## 06 - This ruby script matches a ten-digit phone number.
 - Used `^\d{10}$`
+
+## 07 - This ruby script matches capital letters.
+- Used `[A-Z]`
