@@ -13,3 +13,6 @@
 
 ## 02 - This ruby script matches occurrence of a letter 0 or 1 time.
 - Used `hb?tn`
+
+## 03 - This ruby script matches occurrence of a character 1 or more times.
+- Used `hbt+n`
