@@ -19,3 +19,8 @@
 
 ## 04 - This ruby script check character occurrence 0 or more times.
 - Used `hbt*n`
+
+## 05 - This ruby script checks beginning and end of a string.
+- Checks if string starts with `h` and ends with an `n`
+- Checks if the string has only one character in between
+- Used ^h\wn$
