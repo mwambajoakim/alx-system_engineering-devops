@@ -15,4 +15,7 @@
 - Used `hb?tn`
 
 ## 03 - This ruby script matches occurrence of a character 1 or more times.
-- Used `hbt+n`
+- Used `hbt+n
+
+## 04 - This ruby script check character occurrence 0 or more times.
+- Used `hbt*n`
