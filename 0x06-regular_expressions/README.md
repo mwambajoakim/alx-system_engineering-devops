@@ -23,4 +23,7 @@
 ## 05 - This ruby script checks beginning and end of a string.
 - Checks if string starts with `h` and ends with an `n`
 - Checks if the string has only one character in between
-- Used ^h\wn$
+- Used `^h\wn$`
+
+## 06 - This ruby script matches a ten-digit phone number.
+- Used `^\d{10}$`
