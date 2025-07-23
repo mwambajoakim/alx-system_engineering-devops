@@ -30,3 +30,10 @@
 
 ## 07 - This ruby script matches capital letters.
 - Used `[A-Z]`
+
+## 08 - This ruby script filters data.
+- Uses regex to get:
+  - The sender phone number or name (including country code if present)
+  - The receiver phone number or name (including country code if present)
+  - The flags that were used
+ - Out put is always `[SENDER],[RECEIVER],[FLAGS]`
