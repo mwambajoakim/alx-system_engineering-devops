@@ -1,19 +1,23 @@
 #!/usr/bin/env ruby
 
+# Check if input was provided
 if ARGV.empty?
-  puts "Usage: #{$PROGRAM_NAME} <log_file>"
+  puts "Usage: #{$PROGRAM_NAME} '[from:...] [to:...] [flags:...]'"
   exit 1
 end
 
-# Read file contents
-file = ARGV[0]
+# Get the log line from the command-line argument
+log_line = ARGV[0]
 
-# Regex pattern for [from:], [to:], [flags:]
-pattern = /\[from:(\+?\w+)\]\s\[to:(\+?\w+)\]\s\[flags:(-?\d:-?\d:-?\d:-?\d:-?\d)\]/
+# Match and extract sender, receiver, flags using regex
+match = log_line.match(/\[from:(\+?\w+)\]\s\[to:(\+?\w+)\]\s\[flags:(-?\d:-?\d:-?\d:-?\d:-?\d)\]/)
 
-# Scan each matching line and print in [SENDER],[RECEIVER],[FLAGS] format
-File.foreach(file) do |line|
-  if match = line.match(pattern)
-    puts "#{match[1]},#{match[2]},#{match[3]}"
-  end
+# Print result if match is found
+if match
+  from, to, flags = match.captures
+  puts "#{from},#{to},#{flags}"
+else
+  puts "No valid log format found."
 end
+
+
