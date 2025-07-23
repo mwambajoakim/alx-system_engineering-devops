@@ -7,3 +7,6 @@
 
 ## 00 - This ruby script matches the word School.
 - Just used `School` as the regex
+
+## 01 - This ruby script matches a letter.
+- Used `hbt{2,5}n`
