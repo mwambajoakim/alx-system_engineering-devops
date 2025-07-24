@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# This script pings a connection five times
+
+connection=$1
+
+if [ ! $connection ];
+then
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+fi
+
+ping -c 5 "$connection"
