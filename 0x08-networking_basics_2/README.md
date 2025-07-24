@@ -3,3 +3,6 @@
 ## Introduction
 - Networking is an important part of software develeopment. More than knowing and troubleshooting ports and sockets, it is important to know how to configure and run them.
 
+## 00 - This Bash script configures an Ubuntu server with the below requirements.
+- `localhost` resolves to `127.0.0.2`
+- `facebook.com` resolves to `8.8.8.8`.
