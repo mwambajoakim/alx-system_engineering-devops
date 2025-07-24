@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Gets the IPv4 addresses
+
+ip -4 addr | awk '/inet / {print $2}' | cut -d '/' -f1
