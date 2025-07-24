@@ -8,3 +8,5 @@
 - `facebook.com` resolves to `8.8.8.8`.
 
 ## 01 - This Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+
+## 02 - This Bash script that listens on port 98 on localhost.
