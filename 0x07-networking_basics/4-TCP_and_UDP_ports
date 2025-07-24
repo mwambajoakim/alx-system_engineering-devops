@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
+# This scripts displays listening sockets using ss
+
 ss -lntp
