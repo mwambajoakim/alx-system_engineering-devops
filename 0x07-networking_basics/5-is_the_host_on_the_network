@@ -3,7 +3,7 @@
 
 connection=$1
 
-if [ ! $connection ];
+if [ ! "$connection" ];
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 fi
