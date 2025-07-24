@@ -4,9 +4,6 @@
 # facebook.com 8.8.8.8
 
 set -e
-
-cp /etc/hosts /etc/hosts.bak
-
 # Remove existing entries for localhost and facebook.com to avoid duplicates
 sed -i '/127\.0\.0\.1\s\+localhost/d' /etc/hosts
 sed -i '/facebook\.com/d' /etc/hosts
