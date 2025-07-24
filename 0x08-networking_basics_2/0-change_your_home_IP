@@ -4,11 +4,16 @@
 # facebook.com 8.8.8.8
 
 set -e
-# Remove existing entries for localhost and facebook.com to avoid duplicates
-sed -i '/127\.0\.0\.1\s\+localhost/d' /etc/hosts
-sed -i '/facebook\.com/d' /etc/hosts
-sed -i '/127\.0\.0\.2\s\+localhost/d' /etc/hosts
 
-# Add custom resolution for localhost and facebook.com
-echo "127.0.0.2 localhost" >> /etc/hosts
-echo "8.8.8.8 facebook.com" >> /etc/hosts
+# Backup original /etc/hosts
+cp /etc/hosts /etc/hosts.bak
+
+# Remove existing 'localhost' and 'facebook.com' entries to avoid duplicates
+sed -i '/^[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\s\+localhost\s*$/d' /etc/hosts
+sed -i '/facebook\.com/d' /etc/hosts
+
+# Add the required line exactly: 127.0.0.2 localhost
+echo -e "127.0.0.2\tlocalhost" >> /etc/hosts
+
+# Add the exact line to resolve facebook.com to 8.8.8.8
+echo -e "8.8.8.8\tfacebook.com" >> /etc/hosts
