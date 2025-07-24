@@ -69,3 +69,7 @@ Questions:
 - Which statement is correct for the TCP worker:
 1. `Have you received boxes x, y, z?`
 2. `May I increase the rate at which I am sending you boxes?`
+
+## 04 - This Bash script displays listening ports:
+- That only shows listening sockets
+- That shows the PID and name of the program to which each socket belongs
